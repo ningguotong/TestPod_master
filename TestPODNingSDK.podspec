@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -26,10 +26,16 @@ Pod::Spec.new do |spec|
 
 # spec.public_header_files = 'Pod/Classes/**/*.h'
 
-  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO' }
+  spec.pod_target_xcconfig = { 
+    # 'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
+  }
 
-  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
-  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'arm64' }
+  spec.user_target_xcconfig = { 
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
+   } 
+
+  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' } 
 
   # spec.pod_target_xcconfig = {
   #       'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x86_64',
@@ -45,7 +51,7 @@ Pod::Spec.new do |spec|
 
   # spec.static_framework = true
 
-  spec.frameworks = 'AVFoundation','AVKit','AVFoundation'
+  spec.frameworks = 'AVFoundation','AVKit'
   
   spec.dependency 'Mux-Stats-AVPlayer', '~> 3.1.0'
   spec.dependency 'GCDWebServer', '~> 3.5.4'
