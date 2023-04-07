@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -45,7 +45,7 @@ Pod::Spec.new do |spec|
 
   # spec.static_framework = true
 
-  spec.frameworks = 'AVFoundation'
+  spec.frameworks = 'AVFoundation','AVKit','AVFoundation'
   
   spec.dependency 'Mux-Stats-AVPlayer', '~> 3.1.0'
   spec.dependency 'GCDWebServer', '~> 3.5.4'
