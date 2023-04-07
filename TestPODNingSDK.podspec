@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -36,6 +36,15 @@ Pod::Spec.new do |spec|
   #       'KOTLIN_TARGET[sdk=iphoneos*]' => 'ios_arm'
   #  }
   
+  # spec.pod_target_xcconfig = {
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+  # }
+  # spec.user_target_xcconfig = {
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  # }
+
+  # spec.static_framework = true
+
   spec.frameworks = 'AVFoundation'
   
   spec.dependency 'Mux-Stats-AVPlayer', '~> 3.1.0'
@@ -45,13 +54,6 @@ Pod::Spec.new do |spec|
   spec.dependency  'SwiftCentrifuge'
   spec.dependency  'SwiftProtobuf', '~> 1.0'
 
-  # spec.pod_target_xcconfig = {
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  # }
-  # spec.user_target_xcconfig = {
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  # }
-
-  # spec.static_framework = true
+ 
   
 end
