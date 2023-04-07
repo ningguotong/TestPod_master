@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODSDK"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of TestPODSDK."
  
   spec.description  = <<-DESC
@@ -18,7 +18,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "ningguotong" => "123916376+ningguotong@users.noreply.github.com" } 
   spec.source       = { :git => "https://github.com/ningguotong/TestPod_master.git", :tag => "#{spec.version}" }
 
-
   spec.swift_version = '5.0'
   
   spec.ios.deployment_target = '14.0'
@@ -27,8 +26,7 @@ Pod::Spec.new do |spec|
 
 # spec.public_header_files = 'Pod/Classes/**/*.h'
 
-# spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO' }
-
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO' }
 
   # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
   # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'arm64' }
@@ -36,12 +34,10 @@ Pod::Spec.new do |spec|
   # spec.pod_target_xcconfig = {
   #       'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x86_64',
   #       'KOTLIN_TARGET[sdk=iphoneos*]' => 'ios_arm'
-  #   }
-
+  #  }
   
+  spec.frameworks = 'AVFoundation'
   
-  spec.frameworks = 'CoreFoundation','AVFoundation'
-    
   spec.dependency 'Mux-Stats-AVPlayer', '~> 3.1.0'
   spec.dependency 'GCDWebServer', '~> 3.5.4'
   spec.dependency 'Sentry', '~> 7.31.3'
@@ -49,13 +45,13 @@ Pod::Spec.new do |spec|
   spec.dependency  'SwiftCentrifuge'
   spec.dependency  'SwiftProtobuf', '~> 1.0'
 
-  spec.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  }
-  spec.user_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
+  # spec.pod_target_xcconfig = {
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+  # }
+  # spec.user_target_xcconfig = {
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  # }
 
-  spec.static_framework = true
+  # spec.static_framework = true
   
 end
