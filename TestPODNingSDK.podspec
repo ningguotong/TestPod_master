@@ -1,9 +1,9 @@
 
 Pod::Spec.new do |spec|
  
-  spec.name         = "TestPODSDK"
-  spec.version      = "0.0.3"
-  spec.summary      = "A short description of TestPODSDK."
+  spec.name         = "TestPODNingSDK"
+  spec.version      = "0.0.4"
+  spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
