@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
