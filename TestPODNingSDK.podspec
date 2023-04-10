@@ -26,6 +26,9 @@ Pod::Spec.new do |spec|
 
 # spec.public_header_files = 'Pod/Classes/**/*.h'
 
+spec.pod_target_xcconfig = { 
+  'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO'
+}
   # spec.pod_target_xcconfig = { 
   #   'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO'
     # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
