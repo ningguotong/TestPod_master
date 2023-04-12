@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "ningguotong" => "123916376+ningguotong@users.noreply.github.com" } 
   spec.source       = { :git => "https://github.com/ningguotong/TestPod_master.git", :tag => "#{spec.version}" }
 
-  spec.swift_version = '5.0'
+  # spec.swift_version = '5.0'
   
   spec.ios.deployment_target = '14.0'
  
@@ -30,8 +30,8 @@ Pod::Spec.new do |spec|
     'VALID_ARCHS'=>'arm64 x86_64',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'ENABLE_BITCODE' => 'NO'
-    # 'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
-    # 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
+    'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
   }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
