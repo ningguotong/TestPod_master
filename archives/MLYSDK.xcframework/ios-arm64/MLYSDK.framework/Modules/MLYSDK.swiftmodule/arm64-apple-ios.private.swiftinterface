@@ -99,5 +99,9 @@ public enum ProxyURLModifierError : Swift.Error {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class AVPlayerTool {
+  public static func bufferedTime(currentItem: AVFoundation.AVPlayerItem?) -> Swift.Double
+  @objc deinit
+}
 extension MLYSDK.ProxyURLModifierError : Swift.Equatable {}
 extension MLYSDK.ProxyURLModifierError : Swift.Hashable {}

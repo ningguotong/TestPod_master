@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.10"
+  spec.version      = "0.0.11"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
 # spec.public_header_files = 'Pod/Classes/**/*.h'
 
 spec.pod_target_xcconfig = { 
-  'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO'
+  'VALID_ARCHS' => 'x86_64 arm64', 'ENABLE_BITCODE' => 'NO'
 }
   # spec.pod_target_xcconfig = { 
   #   'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO'
