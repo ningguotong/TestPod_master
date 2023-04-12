@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     'VALID_ARCHS'=>'arm64 x86_64',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'ENABLE_BITCODE' => 'NO'
+    'ENABLE_BITCODE' => 'NO',
     'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
   }
