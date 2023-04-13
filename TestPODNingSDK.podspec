@@ -17,25 +17,26 @@ Pod::Spec.new do |spec|
  
   spec.author             = { "ningguotong" => "123916376+ningguotong@users.noreply.github.com" } 
   spec.source       = { :git => "https://github.com/ningguotong/TestPod_master.git", :tag => "#{spec.version}" }
-
-  # spec.swift_version = '5.0'
-  
+ 
   spec.ios.deployment_target = '14.0'
  
   spec.ios.vendored_frameworks = 'archives/MLYSDK.xcframework'
 
 # spec.public_header_files = 'Pod/Classes/**/*.h'
 
-  spec.pod_target_xcconfig = {
-    'VALID_ARCHS'=>'arm64 x86_64',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
-    'ENABLE_BITCODE' => 'NO'
-    # 'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
-    # 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
-  }
-  spec.user_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
-  }
+  # spec.pod_target_xcconfig = {
+  #   'VALID_ARCHS'=>'arm64 x86_64',
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+  #   'ENABLE_BITCODE' => 'NO'
+  #   # 'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
+  #   # 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
+  # }
+  # spec.user_target_xcconfig = { 
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
+  # }
+
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  spec.swift_version = '5.0'
 
   spec.frameworks = 'AVFoundation','AVKit'
   
