@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.13"
+  spec.version      = "0.0.14"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -26,14 +26,16 @@ Pod::Spec.new do |spec|
 
 # spec.public_header_files = 'Pod/Classes/**/*.h'
 
-  spec.pod_target_xcconfig = {
-    'VALID_ARCHS'=>'arm64 x86_64',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
-    'ENABLE_BITCODE' => 'NO',
-    'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
-    'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
-  }
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+  # spec.pod_target_xcconfig = {
+  #   'VALID_ARCHS'=>'arm64 x86_64',
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+  #   'ENABLE_BITCODE' => 'NO',
+  #   'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
+  #   'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
+  # }
+  # spec.user_target_xcconfig = { 
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
+  # }
 
   spec.frameworks = 'AVFoundation','AVKit'
   
