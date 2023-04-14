@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.14"
+  spec.version      = "0.0.15"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -49,6 +49,8 @@ Pod::Spec.new do |spec|
 
    # 其他设置
    spec.requires_arc = true
+
+   spec.platform = :ios 
 
   #  spec.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
