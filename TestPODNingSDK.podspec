@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.18"
+  spec.version      = "0.0.19"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -39,6 +39,13 @@ Pod::Spec.new do |spec|
   #   'DEFINES_MODULE' => 'YES', 
   #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   #  }
+
+
+  # spec.user_target_xcconfig = {
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR))',
+  #   'EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_1200' => 'arm64 arm64e armv7 armv7s armv6 armv8'
+  # }
+
   spec.swift_version = '5.0'
 
   spec.frameworks = 'AVFoundation','AVKit'
