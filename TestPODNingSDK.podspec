@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = 'AVFoundation','AVKit'
   
-  spec.dependency 'Mux-Stats-AVPlayer', '~> 3.1.0'
+  spec.dependency 'Mux-Stats-AVPlayer' #, '~> 3.1.0' 
   spec.dependency 'GCDWebServer', '~> 3.5.4'
   spec.dependency 'Sentry', '~> 7.31.3'
   spec.dependency 'GoogleWebRTC'
