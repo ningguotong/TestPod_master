@@ -5,6 +5,7 @@
 import AVFoundation
 import AVKit
 import CommonCrypto
+import CoreTelephony
 import CryptoKit
 import Foundation
 import GCDWebServer
@@ -26,6 +27,10 @@ public class MLYAVPlayerAdapter {
   #if compiler(>=5.3) && $AsyncAwait
   public init(playerLayer: AVFoundation.AVPlayerLayer? = nil, playerViewController: AVKit.AVPlayerViewController? = nil) async
   #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AVPlayerTool {
+  public static func bufferedTime(currentItem: AVFoundation.AVPlayerItem?) -> Swift.Double
   @objc deinit
 }
 public class MLYDriverOptions {
@@ -98,10 +103,6 @@ public enum ProxyURLModifierError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
-}
-@_hasMissingDesignatedInitializers public class AVPlayerTool {
-  public static func bufferedTime(currentItem: AVFoundation.AVPlayerItem?) -> Swift.Double
-  @objc deinit
 }
 extension MLYSDK.ProxyURLModifierError : Swift.Equatable {}
 extension MLYSDK.ProxyURLModifierError : Swift.Hashable {}

@@ -311,10 +311,69 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AVPlayerTool",
+        "printedName": "AVPlayerTool",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "bufferedTime",
+            "printedName": "bufferedTime(currentItem:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVPlayerItem?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPlayerItem",
+                    "printedName": "AVFoundation.AVPlayerItem",
+                    "usr": "c:objc(cs)AVPlayerItem"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6MLYSDK12AVPlayerToolC12bufferedTime11currentItemSdSo0bG0CSg_tFZ",
+            "mangledName": "$s6MLYSDK12AVPlayerToolC12bufferedTime11currentItemSdSo0bG0CSg_tFZ",
+            "moduleName": "MLYSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6MLYSDK12AVPlayerToolC",
+        "mangledName": "$s6MLYSDK12AVPlayerToolC",
+        "moduleName": "MLYSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -332,6 +391,20 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftCentrifuge",
+        "printedName": "SwiftCentrifuge",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
       },
       {
         "kind": "Import",
@@ -1153,27 +1226,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MLYSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MLYSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftProtobuf",
-        "printedName": "SwiftProtobuf",
-        "declKind": "Import",
-        "moduleName": "MLYSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "WebRTC",
-        "printedName": "WebRTC",
         "declKind": "Import",
         "moduleName": "MLYSDK"
       },
@@ -2712,6 +2764,13 @@
       },
       {
         "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3194,72 +3253,6 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "MLYSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AVKit",
-        "printedName": "AVKit",
-        "declKind": "Import",
-        "moduleName": "MLYSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AVPlayerTool",
-        "printedName": "AVPlayerTool",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "bufferedTime",
-            "printedName": "bufferedTime(currentItem:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AVFoundation.AVPlayerItem?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AVPlayerItem",
-                    "printedName": "AVFoundation.AVPlayerItem",
-                    "usr": "c:objc(cs)AVPlayerItem"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6MLYSDK12AVPlayerToolC12bufferedTime11currentItemSdSo0bG0CSg_tFZ",
-            "mangledName": "$s6MLYSDK12AVPlayerToolC12bufferedTime11currentItemSdSo0bG0CSg_tFZ",
-            "moduleName": "MLYSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:6MLYSDK12AVPlayerToolC",
-        "mangledName": "$s6MLYSDK12AVPlayerToolC",
-        "moduleName": "MLYSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3283,20 +3276,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MLYSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftCentrifuge",
-        "printedName": "SwiftCentrifuge",
-        "declKind": "Import",
-        "moduleName": "MLYSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftProtobuf",
-        "printedName": "SwiftProtobuf",
         "declKind": "Import",
         "moduleName": "MLYSDK"
       },
@@ -3381,6 +3360,13 @@
         "kind": "Import",
         "name": "WebRTC",
         "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MLYSDK"
       },
@@ -3559,6 +3545,27 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "MLYSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
         "declKind": "Import",
         "moduleName": "MLYSDK"
       },
@@ -4522,6 +4529,20 @@
       "value": "\"response_message\""
     },
     {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/centrifuge\/TrackerCentrifuge.swift",
+      "kind": "StringLiteral",
+      "offset": 186,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/centrifuge\/TrackerCentrifuge.swift",
+      "kind": "StringLiteral",
+      "offset": 52,
+      "length": 17,
+      "value": "\"MLYSDK.TrackerCentrifuge\""
+    },
+    {
       "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/Sources\/MLYSDK\/Classes\/kernel\/protocol\/client\/const\/BaseActionName.swift",
       "kind": "StringLiteral",
       "offset": 81,
@@ -5210,7 +5231,7 @@
     {
       "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/Sources\/MLYSDK\/Classes\/kernel\/service\/filer\/seeker\/DownloaderAgent.swift",
       "kind": "Array",
-      "offset": 5256,
+      "offset": 5243,
       "length": 15,
       "value": "[]"
     },
@@ -5740,20 +5761,6 @@
       "value": "\"details\""
     },
     {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/webrtc\/WebRTCClient.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 13,
-      "value": "\"datachannel\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/webrtc\/WebRTCClient.swift",
-      "kind": "Array",
-      "offset": 402,
-      "length": 105,
-      "value": "[\"stun:stun.l.google.com:19302\", \"stun:stun.1und1.de:3478\"]"
-    },
-    {
       "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/Sources\/MLYSDK\/Classes\/util\/HashTool.swift",
       "kind": "StringLiteral",
       "offset": 113,
@@ -5885,83 +5892,6 @@
       "offset": 6140,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 47,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 175,
-      "length": 26,
-      "value": "\"error: without configure\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 250,
-      "length": 25,
-      "value": "\"error: condition deinit\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 325,
-      "length": 26,
-      "value": "\"error: condition timeout\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 399,
-      "length": 24,
-      "value": "\"error: centrifuge send\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 471,
-      "length": 28,
-      "value": "\"error: protobuf cast error\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 545,
-      "length": 28,
-      "value": "\"error: data channel closed\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 616,
-      "length": 28,
-      "value": "\"error: data channel is nil\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 692,
-      "length": 31,
-      "value": "\"error: data channel send fail\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 766,
-      "length": 19,
-      "value": "\"error: peer empty\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
-      "kind": "StringLiteral",
-      "offset": 830,
-      "length": 21,
-      "value": "\"error: http timeout\""
     },
     {
       "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/Sources\/MLYSDK\/Classes\/kernel\/core\/infra\/metrics\/HTTPDownloadRecordHandler.swift",
@@ -6242,6 +6172,83 @@
       "offset": 226,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 47,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 175,
+      "length": 26,
+      "value": "\"error: without configure\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 25,
+      "value": "\"error: condition deinit\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 325,
+      "length": 26,
+      "value": "\"error: condition timeout\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 399,
+      "length": 24,
+      "value": "\"error: centrifuge send\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 28,
+      "value": "\"error: protobuf cast error\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 28,
+      "value": "\"error: data channel closed\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 616,
+      "length": 28,
+      "value": "\"error: data channel is nil\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 692,
+      "length": 31,
+      "value": "\"error: data channel send fail\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 766,
+      "length": 19,
+      "value": "\"error: peer empty\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/base\/MLYError.swift",
+      "kind": "StringLiteral",
+      "offset": 830,
+      "length": 21,
+      "value": "\"error: http timeout\""
     },
     {
       "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/Sources\/MLYSDK\/Classes\/util\/Logger.swift",
@@ -10248,20 +10255,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/centrifuge\/TrackerCentrifuge.swift",
-      "kind": "StringLiteral",
-      "offset": 186,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/centrifuge\/TrackerCentrifuge.swift",
-      "kind": "StringLiteral",
-      "offset": 52,
-      "length": 17,
-      "value": "\"MLYSDK.TrackerCentrifuge\""
-    },
-    {
       "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/Sources\/MLYSDK\/Classes\/kernel\/service\/client\/swarm\/daemon\/base\/process\/agent\/SwarmProcessAgent.swift",
       "kind": "Dictionary",
       "offset": 114,
@@ -12045,6 +12038,20 @@
       "offset": 193,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/webrtc\/WebRTCClient.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 13,
+      "value": "\"datachannel\""
+    },
+    {
+      "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/webrtc\/WebRTCClient.swift",
+      "kind": "Array",
+      "offset": 402,
+      "length": 105,
+      "value": "[\"stun:stun.l.google.com:19302\", \"stun:stun.1und1.de:3478\"]"
     },
     {
       "filePath": "\/Users\/vip\/Downloads\/Github\/p2sp-sdk-avplayer\/Sources\/MLYSDK\/Classes\/kernel\/protocol\/client\/model\/v1\/base\/webrtc.pb.swift",
