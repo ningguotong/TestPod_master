@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
   # }
 
-  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
   spec.swift_version = '5.0'
 
   spec.frameworks = 'AVFoundation','AVKit'
