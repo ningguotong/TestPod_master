@@ -18,15 +18,16 @@ import SwiftProtobuf
 import WebRTC
 import _Concurrency
 import _StringProcessing
-public enum MLYAVPlayerPlugin {
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func adapt(playerLayer: AVFoundation.AVPlayerLayer? = nil, playerViewController: AVKit.AVPlayerViewController? = nil) async
-  #endif
+@objc @_inheritsConvenienceInitializers @objcMembers public class MLYAVPlayerPlugin : ObjectiveC.NSObject {
+  public var adapter: MLYSDK.MLYAVPlayerAdapter?
+  @objc public func adapt(_ playerViewController: AVKit.AVPlayerViewController)
+  @objc public func buildAssetPlayerItem(url: Foundation.URL) throws -> AVFoundation.AVPlayerItem
+  @objc public func play(url: Foundation.URL)
+  @objc public func notifyPlayerItemNewAccessLogEntry()
+  @objc override dynamic public init()
+  @objc deinit
 }
-public class MLYAVPlayerAdapter {
-  #if compiler(>=5.3) && $AsyncAwait
-  public init(playerLayer: AVFoundation.AVPlayerLayer? = nil, playerViewController: AVKit.AVPlayerViewController? = nil) async
-  #endif
+@_hasMissingDesignatedInitializers public class MLYAVPlayerAdapter {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class AVPlayerTool {

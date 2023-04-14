@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -250,6 +251,19 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class AVPlayerViewController;
+@class NSURL;
+@class AVPlayerItem;
+
+SWIFT_CLASS("_TtC6MLYSDK17MLYAVPlayerPlugin")
+@interface MLYAVPlayerPlugin : NSObject
+- (void)adapt:(AVPlayerViewController * _Nonnull)playerViewController;
+- (AVPlayerItem * _Nullable)buildAssetPlayerItemWithUrl:(NSURL * _Nonnull)url error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (void)playWithUrl:(NSURL * _Nonnull)url;
+- (void)notifyPlayerItemNewAccessLogEntry;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif

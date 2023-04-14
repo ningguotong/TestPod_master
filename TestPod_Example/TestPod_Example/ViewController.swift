@@ -3,6 +3,14 @@ import MLYSDK
 import UIKit
 
 class ViewController: UIViewController {
+    lazy var copyLab: UICopyLabel = {
+        let lab = UICopyLabel()
+        lab.textColor = .white
+        lab.font = .systemFont(ofSize: 17)
+        lab.text = "#peer_id Obtaining, please wait..."
+        return lab
+    }()
+
     lazy var goScrollBtn: UIButton = {
         var button = UIButton()
         button.setTitle("Scroll Video", for: .normal)
@@ -46,13 +54,27 @@ class ViewController: UIViewController {
 extension ViewController {
     func setupUI() {
         self.view.backgroundColor = .black
-        let btn_width = self.view.bounds.width / 3 - (2 + 5)
         let view_height = 55
 
         self.view.addSubview(self.goScrollBtn)
         self.goScrollBtn.snp.makeConstraints { make in
             make.left.right.bottom.equalToSuperview()
             make.height.equalTo(view_height)
+        }
+
+        self.view.addSubview(self.copyLab)
+        self.copyLab.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(67)
+            make.left.right.equalToSuperview()
+        }
+
+        self.goScrollBtn.addTarget(self, action: #selector(self.goScrollBtnAction), for: .touchUpInside)
+
+        _ = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
+            Task {
+                let peerID = await MLYData.getClientPeer()
+                self.copyLab.text = " \(peerID) "
+            }
         }
     }
 }
