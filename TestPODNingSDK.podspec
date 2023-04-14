@@ -50,7 +50,7 @@ Pod::Spec.new do |spec|
    # 其他设置
    spec.requires_arc = true
 
-   spec.platform = :ios,'10.0'
+   spec.platform = :ios,'14.0'
 
   #  spec.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
