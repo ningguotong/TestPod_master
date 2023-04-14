@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.17"
+  spec.version      = "0.0.18"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -55,8 +55,13 @@ Pod::Spec.new do |spec|
 
    spec.platform = :ios,'14.0'
 
-   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #  spec.user_target_xcconfig = { 
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+  #  }
+  #  spec.pod_target_xcconfig = { 
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+  #  }
+ 
 
   #  spec.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
