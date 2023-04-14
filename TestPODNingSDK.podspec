@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "ningguotong" => "123916376+ningguotong@users.noreply.github.com" } 
   spec.source       = { :git => "https://github.com/ningguotong/TestPod_master.git", :tag => "#{spec.version}" }
  
-  spec.ios.deployment_target = '10.0'
+  # spec.ios.deployment_target = '14.0'
  
   spec.ios.vendored_frameworks = 'archives/MLYSDK.xcframework'
 
