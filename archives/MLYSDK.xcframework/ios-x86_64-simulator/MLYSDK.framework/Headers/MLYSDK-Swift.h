@@ -264,6 +264,55 @@ SWIFT_CLASS("_TtC6MLYSDK17MLYAVPlayerPlugin")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
+
+SWIFT_CLASS("_TtC6MLYSDK16MLYClientOptions")
+@interface MLYClientOptions : NSObject
+@property (nonatomic, copy) NSString * _Nullable id;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class MLYDriverOptions;
+
+SWIFT_CLASS("_TtC6MLYSDK9MLYDriver")
+@interface MLYDriver : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VERSION;)
++ (NSString * _Nonnull)VERSION SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull MLYSERSION;)
++ (NSString * _Nonnull)MLYSERSION SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
++ (BOOL)initializeAndReturnError:(NSError * _Nullable * _Nullable)error :(SWIFT_NOESCAPE void (^ _Nonnull)(MLYDriverOptions * _Nonnull))closure;
++ (BOOL)activateAndReturnError:(NSError * _Nullable * _Nullable)error;
++ (void)deactivate;
++ (void)test1;
++ (void)test2;
+@end
+
+@class MLYServerOptions;
+
+SWIFT_CLASS("_TtC6MLYSDK16MLYDriverOptions")
+@interface MLYDriverOptions : NSObject
+@property (nonatomic, strong) MLYClientOptions * _Nonnull client;
+@property (nonatomic, strong) MLYServerOptions * _Nonnull server;
+@property (nonatomic) BOOL debug;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class MLYServerSetting;
+
+SWIFT_CLASS("_TtC6MLYSDK16MLYServerOptions")
+@interface MLYServerOptions : NSObject
+@property (nonatomic, strong) MLYServerSetting * _Nonnull host;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6MLYSDK16MLYServerSetting")
+@interface MLYServerSetting : NSObject
+@property (nonatomic, copy) NSString * _Nullable fqdn;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MLYSDK-Swift.h</key>
 		<data>
-		/4KYETsaopFX8h/VtwNJU2p4wAU=
+		txcsh0MkCxg4Q6RNLD86Bmgiz5Q=
 		</data>
 		<key>Headers/MLYSDK-umbrella.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bwgQ4xiNyGjnjLSXMyjPhgjWoHs=
+		7ZMS+46pb2Tdhcq+M950vDlncGg=
 		</data>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XcEbisWzeL6JW+/cINlNnXbgmnM=
+		Pt8j7kVzy3MAJBBFAt4k7W06Sv4=
 		</data>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XcEbisWzeL6JW+/cINlNnXbgmnM=
+		Pt8j7kVzy3MAJBBFAt4k7W06Sv4=
 		</data>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		R2801QncbqZ+1SbTeX4UQ5a/BY8=
+		n+oe3qtzBR+T9e6EMEHpamketto=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hy9VC0ZaQVnI8h4ZTfRCmj91fhvoFQw9+iJTi6KkC0w=
+			jESKNU/Ybh37hXcAkKP5nBvsLVMB+RfPpqRe5p+u8Ss=
 			</data>
 		</dict>
 		<key>Headers/MLYSDK-umbrella.h</key>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YoB6xNxs5AEZxE7ahq5wmRNrDGVdnp0cLnZyBMziScs=
+			hApbKCgRoMI5XdC9qR00nS4OLvwO/IbGj6b2vksvlh0=
 			</data>
 		</dict>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yg/htKr0LtVB7cYJVeFtoPK5ib7kXTNntYCGA6krfKA=
+			C3OIIm1dzeO6XZOGPOBhNt8V7yAGSaVQF3eAeIPbdKI=
 			</data>
 		</dict>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yg/htKr0LtVB7cYJVeFtoPK5ib7kXTNntYCGA6krfKA=
+			C3OIIm1dzeO6XZOGPOBhNt8V7yAGSaVQF3eAeIPbdKI=
 			</data>
 		</dict>
 		<key>Modules/MLYSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ANehVtQXS7EbvlgOc29IeN1i2384VmlpH0EpML5qPo=
+			lWrep39dHYnQwkbMBx2PF+Zc1UydBPMlzLuAhaIhMks=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

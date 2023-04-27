@@ -34,21 +34,27 @@ import _StringProcessing
   public static func bufferedTime(currentItem: AVFoundation.AVPlayerItem?) -> Swift.Double
   @objc deinit
 }
-public class MLYDriverOptions {
-  public var client: MLYSDK.MLYClientOptions
-  public var server: MLYSDK.MLYServerOptions
-  public var debug: Swift.Bool
-  public init()
+@objc @_inheritsConvenienceInitializers @objcMembers public class MLYDriverOptions : ObjectiveC.NSObject {
+  @objc public var client: MLYSDK.MLYClientOptions
+  @objc public var server: MLYSDK.MLYServerOptions
+  @objc public var debug: Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
-public struct MLYClientOptions {
-  public var id: Swift.String?
+@objc @_inheritsConvenienceInitializers @objcMembers public class MLYClientOptions : ObjectiveC.NSObject {
+  @objc public var id: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
 }
-public struct MLYServerOptions {
-  public var host: MLYSDK.MLYServerSetting
+@objc @_inheritsConvenienceInitializers @objcMembers public class MLYServerOptions : ObjectiveC.NSObject {
+  @objc public var host: MLYSDK.MLYServerSetting
+  @objc override dynamic public init()
+  @objc deinit
 }
-public struct MLYServerSetting {
-  public var fqdn: Swift.String?
+@objc @_inheritsConvenienceInitializers @objcMembers public class MLYServerSetting : ObjectiveC.NSObject {
+  @objc public var fqdn: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class Point : Swift.Codable, Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -61,8 +67,11 @@ public struct MLYServerSetting {
   required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class MLYChart {
-  public static var chart: [Swift.String : [MLYSDK.MLYCharPoint]]
-  public static var chartScore: [Swift.String : [MLYSDK.MLYCharPoint]]
+  public static let shared: MLYSDK.MLYChart
+  public var chart: [Swift.String : [MLYSDK.MLYCharPoint]]
+  public var chartScore: [Swift.String : [MLYSDK.MLYCharPoint]]
+  public func addDelegate()
+  public func didDelegate()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class MLYCharPoint : Swift.Codable, Swift.CustomStringConvertible {
@@ -82,14 +91,15 @@ public class MLYData {
   #endif
   @objc deinit
 }
-public class MLYDriver {
-  public static let VERSION: Swift.String
-  public init()
-  public static func initialize(_ closure: (MLYSDK.MLYDriverOptions) -> ()) throws
-  public static func activate() throws
-  public static func deactivate()
-  public static func test1()
-  public static func test2()
+@objc @_inheritsConvenienceInitializers @objcMembers public class MLYDriver : ObjectiveC.NSObject {
+  @objc public static let VERSION: Swift.String
+  @objc public static let MLYSERSION: Swift.String
+  @objc override dynamic public init()
+  @objc public static func initialize(_ closure: (MLYSDK.MLYDriverOptions) -> ()) throws
+  @objc public static func activate() throws
+  @objc public static func deactivate()
+  @objc public static func test1()
+  @objc public static func test2()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ProxyURLModifier {
