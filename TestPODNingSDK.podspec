@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.23"
+  spec.version      = "0.0.24"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -29,8 +29,8 @@ Pod::Spec.new do |spec|
   spec.dependency 'Mux-Stats-AVPlayer' , '~> 3.1.0' 
   spec.dependency 'GCDWebServer', '~> 3.5.4'
   spec.dependency 'Sentry', '~> 7.31.3'
-  spec.dependency 'GoogleWebRTC'
-  spec.dependency 'SwiftCentrifuge'
+  spec.dependency 'GoogleWebRTC', '~> 1.1.32000'
+  spec.dependency 'SwiftCentrifuge', '0.5.5'
   spec.dependency 'SwiftProtobuf', '~> 1.0'
 
    # 其他设置
@@ -38,76 +38,5 @@ Pod::Spec.new do |spec|
 
    spec.platform = :ios,'14.0'
 
-
-
-
-# spec.public_header_files = 'Pod/Classes/**/*.h'
-
-  # spec.pod_target_xcconfig = {
-  #   'VALID_ARCHS'=>'arm64 x86_64',
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
-  #   'ENABLE_BITCODE' => 'NO'
-  #   # 'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
-  #   # 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
-  # }
-  # spec.user_target_xcconfig = { 
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
-  # }
-
-  # spec.pod_target_xcconfig = { 
-  #   'DEFINES_MODULE' => 'YES', 
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  #  }
-
-
-  # spec.user_target_xcconfig = {
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR))',
-  #   'EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_1200' => 'arm64 arm64e armv7 armv7s armv6 armv8'
-  # }
-
-
-  #  spec.user_target_xcconfig = { 
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  #  }
-  #  spec.pod_target_xcconfig = { 
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  #  }
  
-
-  #  spec.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
-
-
-
-  # spec.pod_target_xcconfig = { 
-#   'VALID_ARCHS' => 'x86_64 arm64', 'ENABLE_BITCODE' => 'NO'
-# }
-
-
-  # spec.pod_target_xcconfig = { 
-  #   'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO'
-    # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
-  # }
-
-  # spec.user_target_xcconfig = { 
-    # 'VALID_ARCHS' => 'x86_64 armv7 arm64', 'ENABLE_BITCODE' => 'NO'
-    # 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
-  #  } 
-
-  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' } 
-
-  # spec.pod_target_xcconfig = {
-  #       'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x86_64',
-  #       'KOTLIN_TARGET[sdk=iphoneos*]' => 'ios_arm'
-  #  }
-  
-  # spec.pod_target_xcconfig = {
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  # }
-  # spec.user_target_xcconfig = {
-  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  # }
-
-  # spec.static_framework = true
-
-  
 end
