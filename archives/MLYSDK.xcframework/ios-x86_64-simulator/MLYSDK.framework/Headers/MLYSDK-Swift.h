@@ -253,14 +253,13 @@ using UInt = size_t;
 #if defined(__OBJC__)
 @class AVPlayerViewController;
 @class NSURL;
-@class AVPlayerItem;
 
 SWIFT_CLASS("_TtC6MLYSDK17MLYAVPlayerPlugin")
 @interface MLYAVPlayerPlugin : NSObject
+- (void)keepLatency:(double)latency;
 - (void)adapt:(AVPlayerViewController * _Nonnull)playerViewController;
-- (AVPlayerItem * _Nullable)buildAssetPlayerItemWithUrl:(NSURL * _Nonnull)url error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-- (void)playWithUrl:(NSURL * _Nonnull)url;
-- (void)notifyPlayerItemNewAccessLogEntry;
+- (void)deactivate;
+- (void)proxyPlayWithUrl:(NSURL * _Nonnull)url;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

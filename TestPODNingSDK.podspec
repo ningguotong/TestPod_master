@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.24"
+  spec.version      = "0.0.25"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -24,19 +24,40 @@ Pod::Spec.new do |spec|
 
   spec.swift_version = '5.0'
 
-  spec.frameworks = 'AVFoundation','AVKit'
+  # spec.pod_target_xcconfig = {
+  #   'VALID_ARCHS'=>'arm64 x86_64',
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+  #   'ENABLE_BITCODE' => 'NO',
+  #    'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
+  #    'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
+  # }
   
-  spec.dependency 'Mux-Stats-AVPlayer' , '~> 3.1.0' 
-  spec.dependency 'GCDWebServer', '~> 3.5.4'
-  spec.dependency 'Sentry', '~> 7.31.3'
-  spec.dependency 'GoogleWebRTC', '~> 1.1.32000'
-  spec.dependency 'SwiftCentrifuge', '0.5.5'
-  spec.dependency 'SwiftProtobuf', '~> 1.0'
+  # spec.user_target_xcconfig = { 
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' , 
+  #   'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+  #   'ENABLE_BITCODE' => 'NO',
+  #    'OTHER_LDFLAGS' => '$(inherited) -framework WebRTC -ObjC',
+  #    'FRAMEWORK_SEARCH_PATHS' => '$(inherited)'
+  # }
 
-   # 其他设置
-   spec.requires_arc = true
+  
+  s.pod_target_xcconfig = {
+    'VALID_ARCHS' => 'x86_64 arm64',
+    'ENABLE_BITCODE' => 'NO'
+ }
 
-   spec.platform = :ios,'14.0'
+ spec.frameworks = 'AVFoundation'
+ 
+ spec.dependency 'Mux-Stats-AVPlayer', '3.1.0'
+ spec.dependency 'GCDWebServer', '3.5.4'
+ spec.dependency 'Sentry', '7.31.3'
+ spec.dependency 'GoogleWebRTC','1.1.32000'
+ spec.dependency  'SwiftCentrifuge', '0.5.5'
+ spec.dependency  'SwiftProtobuf', '1.21.0'
+
+ spec.requires_arc = true
+
+ spec.platform = :ios,'14.0'
 
  
 end

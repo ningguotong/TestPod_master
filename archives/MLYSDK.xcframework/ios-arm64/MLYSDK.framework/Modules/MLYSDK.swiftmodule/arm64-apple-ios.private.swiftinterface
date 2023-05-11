@@ -19,19 +19,16 @@ import WebRTC
 import _Concurrency
 import _StringProcessing
 @objc @_inheritsConvenienceInitializers @objcMembers public class MLYAVPlayerPlugin : ObjectiveC.NSObject {
-  public var adapter: MLYSDK.MLYAVPlayerAdapter?
+  @objc public func keepLatency(_ latency: Swift.Double = 0)
   @objc public func adapt(_ playerViewController: AVKit.AVPlayerViewController)
-  @objc public func buildAssetPlayerItem(url: Foundation.URL) throws -> AVFoundation.AVPlayerItem
-  @objc public func play(url: Foundation.URL)
-  @objc public func notifyPlayerItemNewAccessLogEntry()
+  @objc public func deactivate()
+  @objc deinit
+  @objc public func proxyPlay(url: Foundation.URL)
   @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class MLYAVPlayerAdapter {
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class AVPlayerTool {
-  public static func bufferedTime(currentItem: AVFoundation.AVPlayerItem?) -> Swift.Double
+  public static func remainBufferedTime(_ currentItem: AVFoundation.AVPlayerItem?, _ currentTime: CoreMedia.CMTime) -> Swift.Double
+  public static func maxLoadedTime(_ currentItem: AVFoundation.AVPlayerItem?, _ currentTime: CoreMedia.CMTime) -> CoreMedia.CMTime
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MLYDriverOptions : ObjectiveC.NSObject {
@@ -66,29 +63,28 @@ import _StringProcessing
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class MLYChart {
-  public static let shared: MLYSDK.MLYChart
+public class MLYChart {
+  public init()
   public var chart: [Swift.String : [MLYSDK.MLYCharPoint]]
   public var chartScore: [Swift.String : [MLYSDK.MLYCharPoint]]
-  public func addDelegate()
-  public func didDelegate()
+  public func activate()
+  public func deactivate()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class MLYCharPoint : Swift.Codable, Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
-  public var char_x: Swift.String
-  public var char_y: Swift.Double
+  public var chart_x: Swift.String
+  public var chart_y: Swift.Double
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-public class MLYData {
-  public init()
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func getClientPeer() async -> Swift.String
-  #endif
+@_hasMissingDesignatedInitializers public class MLYData {
+  public static var instance: MLYSDK.MLYData
+  public var token: Swift.String?
+  public var peerID: Swift.String?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MLYDriver : ObjectiveC.NSObject {
@@ -114,6 +110,14 @@ public enum ProxyURLModifierError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class StringTool {
+  public static func format(_ format: Swift.String, _ value: Swift.Double) -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class TimeTool {
+  public static func makeNowFstring(_ format: Swift.String) -> Swift.String
+  @objc deinit
 }
 extension MLYSDK.ProxyURLModifierError : Swift.Equatable {}
 extension MLYSDK.ProxyURLModifierError : Swift.Hashable {}
