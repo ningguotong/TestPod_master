@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
   # }
 
   
-  s.pod_target_xcconfig = {
+  spec.pod_target_xcconfig = {
     'VALID_ARCHS' => 'x86_64 arm64',
     'ENABLE_BITCODE' => 'NO'
  }
@@ -51,9 +51,9 @@ Pod::Spec.new do |spec|
  spec.dependency 'Mux-Stats-AVPlayer', '3.1.0'
  spec.dependency 'GCDWebServer', '3.5.4'
  spec.dependency 'Sentry', '7.31.3'
- spec.dependency 'GoogleWebRTC','1.1.32000'
- spec.dependency  'SwiftCentrifuge', '0.5.5'
- spec.dependency  'SwiftProtobuf', '1.21.0'
+ spec.dependency 'GoogleWebRTC', '1.1.32000'
+ spec.dependency 'SwiftCentrifuge', '0.5.5'
+ spec.dependency 'SwiftProtobuf', '1.21.0'
 
  spec.requires_arc = true
 
