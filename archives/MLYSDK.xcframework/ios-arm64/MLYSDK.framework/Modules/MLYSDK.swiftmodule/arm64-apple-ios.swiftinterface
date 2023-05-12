@@ -85,6 +85,11 @@ public class MLYChart {
   public static var instance: MLYSDK.MLYData
   public var token: Swift.String?
   public var peerID: Swift.String?
+  public var swarmID: Swift.String?
+  public var swarmUserCount: Swift.Int?
+  public var otherSwarmID: Swift.String?
+  public var webrtcState: Swift.Bool
+  public var centrifugeState: Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MLYDriver : ObjectiveC.NSObject {

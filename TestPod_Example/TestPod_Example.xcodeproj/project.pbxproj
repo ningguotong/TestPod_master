@@ -14,8 +14,24 @@
 		28297BC029E0055C007428B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28297BBE29E0055C007428B6 /* LaunchScreen.storyboard */; };
 		28297BC829E009DA007428B6 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28297BC729E009DA007428B6 /* ScrollViewController.swift */; };
 		289742BB29E927420078C1F2 /* UICopyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289742BA29E927420078C1F2 /* UICopyLabel.swift */; };
+		28F010892A0DEC4C002065C9 /* MLYSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F010872A0DEC2B002065C9 /* MLYSDK.xcframework */; };
+		28F0108A2A0DEC4C002065C9 /* MLYSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28F010872A0DEC2B002065C9 /* MLYSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F665644CB3189A7224B8847 /* Pods_TestPod_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2403FF78E5461CC678C3D7 /* Pods_TestPod_Example.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		28F0108B2A0DEC4C002065C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				28F0108A2A0DEC4C002065C9 /* MLYSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		28297BB029E0055A007428B6 /* TestPod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +43,7 @@
 		28297BC129E0055C007428B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28297BC729E009DA007428B6 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		289742BA29E927420078C1F2 /* UICopyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICopyLabel.swift; sourceTree = "<group>"; };
+		28F010872A0DEC2B002065C9 /* MLYSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MLYSDK.xcframework; sourceTree = "<group>"; };
 		5E764FF2731D96028933D558 /* Pods-TestPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPod_Example.release.xcconfig"; path = "Target Support Files/Pods-TestPod_Example/Pods-TestPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9C7DEE635B02B4C6F68D9133 /* Pods-TestPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPod_Example.debug.xcconfig"; path = "Target Support Files/Pods-TestPod_Example/Pods-TestPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2403FF78E5461CC678C3D7 /* Pods_TestPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F665644CB3189A7224B8847 /* Pods_TestPod_Example.framework in Frameworks */,
+				28F010892A0DEC4C002065C9 /* MLYSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +65,7 @@
 		13BAF2ED98353810FB22BE8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28F010872A0DEC2B002065C9 /* MLYSDK.xcframework */,
 				EF2403FF78E5461CC678C3D7 /* Pods_TestPod_Example.framework */,
 			);
 			name = Frameworks;
@@ -106,6 +125,7 @@
 				28297BAD29E0055A007428B6 /* Frameworks */,
 				28297BAE29E0055A007428B6 /* Resources */,
 				0BAF5F55C077197B465C20FC /* [CP] Embed Pods Frameworks */,
+				28F0108B2A0DEC4C002065C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

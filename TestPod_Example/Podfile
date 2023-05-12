@@ -6,6 +6,6 @@ target 'TestPod_Example' do
   use_frameworks!
 
   # Pods for TestPod_Example
-pod 'TestPODNingSDK',:git => 'https://github.com/ningguotong/TestPod_master.git'
+#pod 'TestPODNingSDK',:git => 'https://github.com/ningguotong/TestPod_master.git'
 pod 'SnapKit'
 end
