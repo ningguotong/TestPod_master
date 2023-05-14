@@ -86,7 +86,7 @@ extension HomeNavViewController {
         self.view.addSubview(self.restartButton)
 
         _ = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
-            var text = "Peer: \(MLYData.instance.peerID ?? "") \n"
+            let text = "Peer: \(MLYData.instance.peerID ?? "") \n"
             self.copyLab.text = text
         }
     }
