@@ -72,8 +72,8 @@ extension ViewController {
 
         _ = Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
             Task {
-                let peerID = await MLYData.getClientPeer()
-                self.copyLab.text = " \(peerID) "
+//                let peerID =   MLYData.instance.peerID ?? ""
+//                self.copyLab.text = " \(peerID) "
             }
         }
     }
