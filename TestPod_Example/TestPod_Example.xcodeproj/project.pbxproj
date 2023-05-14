@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		06917A7E2A10E01B00ABFF6D /* HomeNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06917A7D2A10E01B00ABFF6D /* HomeNavViewController.swift */; };
 		06917A802A10E02E00ABFF6D /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06917A7F2A10E02E00ABFF6D /* PlayerViewController.swift */; };
+		06917A8B2A10EB4300ABFF6D /* MLYSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06917A892A10EB3C00ABFF6D /* MLYSDK.xcframework */; };
+		06917A8C2A10EB4300ABFF6D /* MLYSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06917A892A10EB3C00ABFF6D /* MLYSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28297BB429E0055A007428B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28297BB329E0055A007428B6 /* AppDelegate.swift */; };
 		28297BBB29E0055A007428B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28297BB929E0055A007428B6 /* Main.storyboard */; };
 		28297BBD29E0055C007428B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28297BBC29E0055C007428B6 /* Assets.xcassets */; };
@@ -25,6 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				06917A8C2A10EB4300ABFF6D /* MLYSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +37,7 @@
 /* Begin PBXFileReference section */
 		06917A7D2A10E01B00ABFF6D /* HomeNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavViewController.swift; sourceTree = "<group>"; };
 		06917A7F2A10E02E00ABFF6D /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		06917A892A10EB3C00ABFF6D /* MLYSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MLYSDK.xcframework; path = ../../archives/MLYSDK.xcframework; sourceTree = "<group>"; };
 		215A4D433FC7C1C995F7CEEE /* Pods-TestPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPod_Example.release.xcconfig"; path = "Target Support Files/Pods-TestPod_Example/Pods-TestPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 		28297BB029E0055A007428B6 /* TestPod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28297BB329E0055A007428B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8A0FC053124C8B2555355F /* Pods_TestPod_Example.framework in Frameworks */,
+				06917A8B2A10EB4300ABFF6D /* MLYSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,7 @@
 		28297BB229E0055A007428B6 /* TestPod_Example */ = {
 			isa = PBXGroup;
 			children = (
+				06917A892A10EB3C00ABFF6D /* MLYSDK.xcframework */,
 				28297BB329E0055A007428B6 /* AppDelegate.swift */,
 				06917A7D2A10E01B00ABFF6D /* HomeNavViewController.swift */,
 				06917A7F2A10E02E00ABFF6D /* PlayerViewController.swift */,
