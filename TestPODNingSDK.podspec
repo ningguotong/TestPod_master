@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "TestPODNingSDK"
-  spec.version      = "0.0.31"
+  spec.version      = "0.0.32"
   spec.summary      = "A short description of TestPODNingSDK."
  
   spec.description  = <<-DESC
@@ -46,13 +46,13 @@ Pod::Spec.new do |spec|
 #     'ENABLE_BITCODE' => 'NO'
 #  }
 
-  spec.pod_target_xcconfig = {  
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => ['arm64']
-    }
+  # spec.pod_target_xcconfig = {  
+  #     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => ['arm64']
+  #   }
   
-    spec.user_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]'  => ['arm64']
-    }   
+  #   spec.user_target_xcconfig = {
+  #     'EXCLUDED_ARCHS[sdk=iphonesimulator*]'  => ['arm64']
+  #   }   
 
 
  spec.frameworks = 'AVFoundation'
