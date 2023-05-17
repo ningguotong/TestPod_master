@@ -106,9 +106,6 @@ class PlayerViewController: UIViewController {
             text.append("Cenrifuge state: \(MLYData.instance.centrifugeState) \n")
             text.append("WebRTC state: \(MLYData.instance.webrtcState) \n")
             self.setInfo(text)
-
-            self.plugin.keepLatency(0)
-
         })
     }
 
