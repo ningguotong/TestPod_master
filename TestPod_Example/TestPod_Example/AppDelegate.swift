@@ -2,35 +2,11 @@ import MLYSDK
 import UIKit
 
 @objcMembers
-class DemoConfig: NSObject {
-    static var ll_prod = DemoConfig(
-        "cgpniujg7i146raqgbdg",
-        "vsp.mlytics.com",
-        "https://lowlatencydemo.mlytics.com/app/stream/llhls.m3u8"
-    )
-    static var ll_prod_abr = DemoConfig(
-        "cgpniujg7i146raqgbdg",
-        "vsp.mlytics.com",
-        "https://lowlatencydemo.mlytics.com/app/stream/abr.m3u8"
-//        "https://lowlatencydemo.mlytics.com/app/stream/chunklist_4_video_NETrWmS4_llhls.m3u8"
-    )
-
+class DemoConfig: NSObject { 
     static var ll_uat = DemoConfig(
         "cgsangrvdp42j9d4c4v0",
         "vsp.mlytics.co",
         "https://lowlatencydemo.mlytics.co/app/stream/llhls.m3u8"
-    )
-    static var ll_uat_abr = DemoConfig(
-        "cgsangrvdp42j9d4c4v0",
-        "vsp.mlytics.co",
-//        "https://lowlatencydemo.mlytics.co/app/stream/abr.m3u8"
-        "https://lowlatencydemo.mlytics.co/app/stream/chunklist_6_video_z8ZCB2RV_llhls.m3u8"
-    )
-
-    static var prod = DemoConfig(
-        "cegh8d9j11u91ba1u600",
-        "vsp.mlytics.com",
-        "https://vsp-stream.s3.ap-northeast-1.amazonaws.com/HLS/raw/SpaceX.m3u8"
     )
     static var uat = DemoConfig(
         "celv6v3lj0nerkd2m3pg",
@@ -56,7 +32,7 @@ class DemoConfig: NSObject {
     )
 
     @objc
-    static var defaultConfig = sit
+    static var defaultConfig = ll_uat
 
     var id: String
     var server: String
